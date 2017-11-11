@@ -1,0 +1,84 @@
+\documentclass[12pt]{report}
+% Klasa do wystawiania tez
+% link: https://www.sharelatex.com/blog/2013/08/02/thesis-series-pt1.html
+
+\usepackage{polski}
+% Polskie łamanie wyrazów
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%
+\usepackage{times}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{fancyhdr}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+%
+
+%---------------------------------------------------------------------------
+
+\lstset{
+	literate={ą}{{\k{a}}}1
+	{ć}{{\'c}}1
+	{ę}{{\k{e}}}1
+	{ó}{{\'o}}1
+	{ń}{{\'n}}1
+	{ł}{{\l{}}}1
+	{ś}{{\'s}}1
+	{ź}{{\'z}}1
+	{ż}{{\.z}}1
+	{Ą}{{\k{A}}}1
+	{Ć}{{\'C}}1
+	{Ę}{{\k{E}}}1
+	{Ó}{{\'O}}1
+	{Ń}{{\'N}}1
+	{Ł}{{\L{}}}1
+	{Ś}{{\'S}}1
+	{Ź}{{\'Z}}1
+	{Ż}{{\.Z}}1,
+	basicstyle=\footnotesize\ttfamily,
+}
+% Co by polskie znaczki się nie buntowały
+
+\def\thesistable{
+	\begin{tabular}{p{45mm}l}
+		Autorzy: & {\itshape Sebastian Domarecki, Mateusz Wiśniewski}\\[-1mm]
+		Kierunek i rok studi\'{o}w: & {\itshape {Informatyka, III rok}}\\
+	\end{tabular}
+}
+
+
+
+
+%---------------------------------------------------------------------------
+\begin{document}
+	\titlepage
+	
+\begin{center}
+	\vspace*{1.5cm}
+	\includegraphics[scale=0.6]{agh.jpg}\\
+	\vspace*{2mm}
+	\large AKADEMIA GÓRNICZO-HUTNICZA\\
+	\vspace*{1mm}
+	\large Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej\\
+	\vspace*{1cm}
+	\sffamily\Large\itshape Analiza strukturalna Aquaparku
+	
+	\date{2017}
+	
+	\vspace{\fill}
+\end{center}
+	\noindent
+	{\sffamily
+		\thesistable
+	}
+	
+	\tableofcontents
+	
+
+\end{document}
+%---------------------------------------------------------------------------
+
