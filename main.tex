@@ -43,41 +43,22 @@
 }
 % Co by polskie znaczki się nie buntowały
 
-\def\thesistable{
-	\begin{tabular}{p{45mm}l}
-		Autorzy: & {\itshape Sebastian Domarecki, Mateusz Wiśniewski}\\[-1mm]
-		Kierunek i rok studi\'{o}w: & {\itshape {Informatyka, III rok}}\\
-	\end{tabular}
-}
-
-
-
 
 %---------------------------------------------------------------------------
 \begin{document}
-	\titlepage
 	
-\begin{center}
-	\vspace*{1.5cm}
-	\includegraphics[scale=0.6]{agh.jpg}\\
-	\vspace*{2mm}
-	\large AKADEMIA GÓRNICZO-HUTNICZA\\
-	\vspace*{1mm}
-	\large Wydział Elektrotechniki, Automatyki, Informatyki i Inżynierii Biomedycznej\\
-	\vspace*{1cm}
-	\sffamily\Large\itshape Analiza strukturalna Aquaparku
+\include{title}
 	
-	\date{2017}
+\tableofcontents
 	
-	\vspace{\fill}
-\end{center}
-	\noindent
-	{\sffamily
-		\thesistable
-	}
-	
-	\tableofcontents
-	
+\include{streszczenie_systemu}
+\include{lista_bodzcow}
+\include{diagram_kontekstowy}
+\include{diagramy_DFD}
+\include{diagramy_ERD}
+\include{diagramy_STD}
+\include{data_dictionary}
+\include{process_specification}
 
 \end{document}
 %---------------------------------------------------------------------------
